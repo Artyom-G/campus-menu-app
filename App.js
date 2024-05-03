@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Map from './components/map';
+import MapScreen from './screens/mapScreen';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Heyo</Text>
+      <MapScreen></MapScreen>
       <StatusBar style="auto" />
     </View>
   );
