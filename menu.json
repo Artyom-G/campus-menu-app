@@ -1,0 +1,22 @@
+{
+    "restaurants" : [
+        {
+            "restauraunt": "McDonald's",
+            "categories" : [
+                {
+                    "name" : "Burgers",
+                    "items" : [
+                        {
+                            "name": "big mac",
+                            "price": 10
+                        },
+                        {
+                            "name": "big big mac",
+                            "price": 20
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
