@@ -1,18 +1,20 @@
 {
     "restaurants" : [
         {
-            "restauraunt": "McDonald's",
+            "restaurant": "McDonald's",
             "categories" : [
                 {
                     "name" : "Burgers",
                     "items" : [
                         {
                             "name": "big mac",
-                            "price": 10
+                            "price": 10,
+                            "picture": "https://s7d1.scene7.com/is/image/mcdonalds/Header_BigMac_832x472:1-3-product-tile-desktop?wid=763&hei=472&dpr=off"
                         },
                         {
                             "name": "big big mac",
-                            "price": 20
+                            "price": 20,
+                            "picture": "https://i.ytimg.com/vi/LIWSD_5UYH0/maxresdefault.jpg"
                         }
                     ]
                 }
