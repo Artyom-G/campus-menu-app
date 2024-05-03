@@ -1,12 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
 import MenuItem from '../components/menuItem';
 
 const menu = require('../menu.json');
 
 export default function MenuScreen() {
   return (
-    <View style={styles.container}>
+    <ScrollView>
       {menu.restaurants.map((restaurant, indexRes) => {
         return restaurant.categories.map((category, indexCat) => {
           return category.items.map((item, indexItem) => {
@@ -24,7 +24,7 @@ export default function MenuScreen() {
           });
         });
       })}
-    </View>
+    </ScrollView>
   );
 }
 
