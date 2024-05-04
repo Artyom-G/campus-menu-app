@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
-import MenuItem from '../components/menuItem';
 import MenuRestaurant from '../components/menuRestaurant';
 
 const menu = require('../menu.json');
