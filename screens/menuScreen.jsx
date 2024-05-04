@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native';
 import MenuItem from '../components/menuItem';
+import MenuRestaurant from '../components/menuRestaurant';
+import MenuRestaurantNew from '../components/menuRestaurantNew';
 
 const menu = require('../menu.json');
 
@@ -14,21 +16,9 @@ export default function MenuScreen() {
         <View style={styles.container}>
             <ScrollView style={styles.scrollview}>
                 {menu.restaurants.map((restaurant, indexRes) => {
-                    return restaurant.categories.map((category, indexCat) => {
-                    return category.items.map((item, indexItem) => {
-                        return (
-                        <TouchableOpacity key={indexItem} style={styles.menuItem}>
-                            <MenuItem
-                            name={item.name}
-                            restaurant={restaurant.restaurant}
-                            category={category.name}
-                            price={item.price}
-                            picture={item.picture}
-                            />
-                        </TouchableOpacity>
-                        );
-                    });
-                    });
+                    return(
+                        <MenuRestaurant key={indexRes} restaurant={restaurant}></MenuRestaurant>
+                    ) 
                 })}
             </ScrollView>
         </View>
@@ -39,14 +29,13 @@ const styles = StyleSheet.create({
   container: {
     marginTop: 100,
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start'
 },
 scrollview:{
-    gap: 10,
+    gap: 1,
     width: "100%",
     flex: 1,
-    
+    height: "100%"
 },
   menuItem:{
     
