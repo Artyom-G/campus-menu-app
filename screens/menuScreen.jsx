@@ -6,25 +6,27 @@ const menu = require('../menu.json');
 
 export default function MenuScreen() {
   return (
-    <ScrollView>
-      {menu.restaurants.map((restaurant, indexRes) => {
-        return restaurant.categories.map((category, indexCat) => {
-          return category.items.map((item, indexItem) => {
-            return (
-              <TouchableOpacity key={indexItem} style={styles.menuItem}>
-                <MenuItem
-                  name={item.name}
-                  restaurant={restaurant.restaurant}
-                  category={category.name}
-                  price={item.price}
-                  picture={item.picture}
-                />
-              </TouchableOpacity>
-            );
-          });
-        });
-      })}
-    </ScrollView>
+    <View style={styles.container}>
+        <ScrollView>
+            {menu.restaurants.map((restaurant, indexRes) => {
+                return restaurant.categories.map((category, indexCat) => {
+                return category.items.map((item, indexItem) => {
+                    return (
+                    <TouchableOpacity key={indexItem} style={styles.menuItem}>
+                        <MenuItem
+                        name={item.name}
+                        restaurant={restaurant.restaurant}
+                        category={category.name}
+                        price={item.price}
+                        picture={item.picture}
+                        />
+                    </TouchableOpacity>
+                    );
+                });
+                });
+            })}
+        </ScrollView>
+    </View>
   );
 }
 
@@ -35,7 +37,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 10
+    gap: 10,
+    width: "100%"
   },
   menuItem:{
     
