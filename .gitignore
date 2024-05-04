@@ -36,3 +36,4 @@ yarn-error.*
 
 # other
 .vscode/
+clientIDs.json

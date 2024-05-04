@@ -6,10 +6,6 @@ const menu = require('../menu.json');
 
 export default function MenuScreen() {
 
-    function filter(items, filterFunc){
-        
-    }
-
     return (
         <View style={styles.container}>
             <ScrollView style={styles.scrollview}>
