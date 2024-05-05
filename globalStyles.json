@@ -1,4 +1,6 @@
 {
+    "headerColor": "#FFFFFF",
+    "headerSize": 26,
     "primaryRedColor": "#FF1F00",
     "primaryInactiveRedColor": "#7a1b0d",
     "primaryYellowColor": "#FFC700",

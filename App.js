@@ -41,6 +41,14 @@ export default function App() {
           tabBarLabelStyle: {
             display: 'none',
           },
+          headerStyle: {
+            backgroundColor: globalStyles.primaryRedColor,
+            height: 100,
+          },
+          headerTitleStyle: {
+            color: 'white', 
+          },
+          headerTitle: (props) => <Text {...props} style={styles.header}>GryphCuisine</Text>, 
         })}
       >
 
@@ -54,5 +62,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container:{
     backgroundColor: globalStyles.bottomBarBackgroundColor
+  },
+  header:{
+    color: globalStyles.headerColor,
+    fontSize: globalStyles.headerSize,
+    fontWeight: 'bold',
+    textAlign: 'right',
   }
 });
