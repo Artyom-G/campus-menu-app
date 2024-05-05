@@ -8,7 +8,6 @@ function AccountScreen() {
 
     return (
         <View style={styles.container}>
-            <Text>Profile Screen</Text>
             <GoogleOAuth />
         </View>
     );
