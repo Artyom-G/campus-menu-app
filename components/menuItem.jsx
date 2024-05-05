@@ -1,15 +1,14 @@
 import { StyleSheet, Text, View, Image } from 'react-native';
 
+const globalStyles = require("../globalStyles.json");
+
 export default function MenuItem({name, restaurant, category, price, picture}) {
   return (
     <View style={styles.container}>
         <Image source={{uri:picture,}} style={styles.image}></Image>
-        <View style={styles.restaurant}>
-            <Text>{restaurant}</Text>
-        </View>
-        <View style={styles.name}>
-            <Text>{name}</Text>
-            <Text>{price}</Text>
+        <View style={styles.tags}>
+            <Text style={styles.name}>{name}</Text>
+            <Text style={styles.name}>${price}</Text>
         </View>
         
     </View>
@@ -19,25 +18,24 @@ export default function MenuItem({name, restaurant, category, price, picture}) {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
       justifyContent: 'center',
       alignItems: 'center',
-      padding: 20 // Ensure there's padding to avoid content touching the edges
+      padding: 20 
     },
     image: {
-      width: 180, // Adjusted width to match the menuItem width
-      height: 100, // Fixed height for images
-      marginBottom: 10 // Space between image and text below
+      width: globalStyles.itemImageWidth, 
+      height: globalStyles.itemImageHeight, 
+      marginBottom: 10 
     },
-    name: {
+    tags: {
       flexDirection: 'row',
       justifyContent: 'space-between',
       width: '100%',
-      alignItems: 'center' // Ensure text is aligned center vertically
+      alignItems: 'center'   
     },
-    restaurant: {
-      justifyContent: 'flex-end',
-      width: '100%'
+    name:{
+      color:globalStyles.primaryYellowColor,
+      fontSize: globalStyles.itemFontSize
     }
   });
   

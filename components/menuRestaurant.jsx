@@ -5,7 +5,7 @@ import MenuItem from './menuItem';
 const menu = require('../menu.json');
 
 export default function MenuRestaurant({ restaurant }) {
-    // Flatten all items from all categories into a single array with all details included
+
     const items = restaurant.categories.reduce((allItems, category) => [
         ...allItems,
         ...category.items.map(item => ({
@@ -15,7 +15,6 @@ export default function MenuRestaurant({ restaurant }) {
         }))
     ], []);
 
-    // Render function for each item in the FlatList
     const renderItem = ({ item }) => (
         <TouchableOpacity style={styles.menuItem}>
             <MenuItem
