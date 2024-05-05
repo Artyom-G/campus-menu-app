@@ -1,8 +1,10 @@
 {
-    "primaryRedColor": "red",
-    "primaryYellowColor": "yellow",
+    "primaryRedColor": "#FF1F00",
+    "primaryYellowColor": "#FFC700",
+    "backgroundColor": "#FFF9EA",
+    "bottomBarIconSize": 20,
     "itemImageHeight": 243,
     "itemImageWidth": 332,
-    "itemFontSize": 24,
-    "restaurantFontSize": 32
+    "itemFontSize": 20,
+    "restaurantFontSize": 26
 }
