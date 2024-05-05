@@ -3,6 +3,7 @@ import { StyleSheet, View, TouchableOpacity, FlatList } from 'react-native';
 import MenuItem from './menuItem';
 
 const menu = require('../menu.json');
+const globalStyles = require("../globalStyles.json");
 
 export default function MenuRestaurant({ restaurant }) {
 
@@ -27,6 +28,10 @@ export default function MenuRestaurant({ restaurant }) {
         </TouchableOpacity>
     );
 
+    const renderSeparator = () => (
+        <View style={styles.itemGap} />
+    );
+
     return (
         <View style={styles.container}>
             <FlatList
@@ -35,6 +40,8 @@ export default function MenuRestaurant({ restaurant }) {
                 keyExtractor={(item, index) => `${item.name}-${index}`}
                 horizontal={true}
                 showsHorizontalScrollIndicator={false}
+                ItemSeparatorComponent={renderSeparator} // Add this line to include gaps
+                contentContainerStyle={styles.flatList}
             />
         </View>
     );
@@ -42,15 +49,18 @@ export default function MenuRestaurant({ restaurant }) {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 100,
         flex: 1,
         alignItems: 'flex-start',
-        height: "100%",
-        width: "100%"
+
     },
     menuItem: {
-        height: 250,
-        width: 200,
-        margin: 10,
+        width: globalStyles.itemImageWidth
+    },
+    flatList:{
+        gap: 20,
+        paddingLeft: 20
+    },
+    itemGap:{
+        width: 5
     }
 });

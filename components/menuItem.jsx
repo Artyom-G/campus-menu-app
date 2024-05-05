@@ -8,7 +8,7 @@ export default function MenuItem({name, restaurant, category, price, picture}) {
         <Image source={{uri:picture,}} style={styles.image}></Image>
         <View style={styles.tags}>
             <Text style={styles.name}>{name}</Text>
-            <Text style={styles.name}>${price}</Text>
+            <Text style={styles.price}>${price}</Text>
         </View>
         
     </View>
@@ -25,7 +25,8 @@ export default function MenuItem({name, restaurant, category, price, picture}) {
     image: {
       width: globalStyles.itemImageWidth, 
       height: globalStyles.itemImageHeight, 
-      marginBottom: 10 
+      marginBottom: 10,
+      borderRadius: 15,
     },
     tags: {
       flexDirection: 'row',
@@ -35,7 +36,15 @@ export default function MenuItem({name, restaurant, category, price, picture}) {
     },
     name:{
       color:globalStyles.primaryYellowColor,
-      fontSize: globalStyles.itemFontSize
+      fontSize: globalStyles.itemFontSize,
+      textAlign: "left",
+      fontWeight: "bold" 
+    },
+    price:{
+      color:globalStyles.primaryYellowColor,
+      fontSize: globalStyles.itemFontSize,
+      textAlign: "right",
+      fontWeight: "bold"
     }
   });
   

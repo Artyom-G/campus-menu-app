@@ -6,7 +6,7 @@ import ProfileScreen from './screens/accountScreen';
 export default function App() {
   return (
     <View style={styles.container}>
-      <ProfileScreen></ProfileScreen>
+      <MenuScreen></MenuScreen>
       <StatusBar style="auto" />
     </View>
   );

@@ -1,8 +1,8 @@
 {
     "primaryRedColor": "red",
     "primaryYellowColor": "yellow",
-    "itemImageHeight": 283,
-    "itemImageWidth": 402,
-    "itemFontSize": 28
-
+    "itemImageHeight": 243,
+    "itemImageWidth": 332,
+    "itemFontSize": 24,
+    "restaurantFontSize": 32
 }
