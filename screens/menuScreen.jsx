@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     backgroundColor: globalStyles.backgroundColor
 },
 initialGap:{
-    height: 100
+    height: 60
 },
 scrollview:{
     gap: 1,
