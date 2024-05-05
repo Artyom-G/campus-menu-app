@@ -1,65 +1,253 @@
 {
-    "restaurants" : [
+    "restaurants": [
         {
-            "restaurant": "McDonald's",
-            "categories" : [
+            "restaurant": "KFC",
+            "categories": [
                 {
-                    "name" : "Burgers",
-                    "items" : [
+                    "name": "Chicken",
+                    "items": [
                         {
-                            "name": "big mac",
+                            "name": "Original Recipe Chicken",
+                            "price": 12.09,
+                            "picture": "https://img.sndimg.com/food/image/upload/q_92,fl_progressive,w_1200,c_scale/v1/img/recipes/39/37/95/0nLwbqQd2KP4iuCz1QgA-Fried-Chicken-1.jpg",
+                            "days": ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
+                        },
+                        {
+                            "name": "Extra Crispy Chicken",
+                            "price": 12.29,
+                            "picture": "data:image/jpeg;base64,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",
+                            "days": ["Mon", "Wed", "Fri", "Sun"]
+                        },
+                        {
+                            "name": "Kentucky Grilled Chicken",
+                            "price": 11.99,
+                            "picture": "https://hips.hearstapps.com/delish/assets/16/40/1475873448-grilled-image.jpg",
+                            "days": ["Tues", "Thurs", "Sat"]
+                        },
+                        {
+                            "name": "Hot Wings",
                             "price": 10,
-                            "picture": "https://s7d1.scene7.com/is/image/mcdonalds/Header_BigMac_832x472:1-3-product-tile-desktop?wid=763&hei=472&dpr=off"
-                        },
-                        {
-                            "name": "big big mac",
-                            "price": 20,
-                            "picture": "https://i.ytimg.com/vi/LIWSD_5UYH0/maxresdefault.jpg"
-                        },
-                        {
-                            "name": "big big mac",
-                            "price": 20,
-                            "picture": "https://i.ytimg.com/vi/LIWSD_5UYH0/maxresdefault.jpg"
-                        },
-                        {
-                            "name": "big big mac",
-                            "price": 20,
-                            "picture": "https://i.ytimg.com/vi/LIWSD_5UYH0/maxresdefault.jpg"
-                        },
-                        {
-                            "name": "big big mac",
-                            "price": 20,
-                            "picture": "https://i.ytimg.com/vi/LIWSD_5UYH0/maxresdefault.jpg"
+                            "picture": "https://hips.hearstapps.com/hmg-prod/images/buffalo-wings-index-65b7cc59e4ac6.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=1200:*",
+                            "days": ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
                         }
                     ]
                 },
                 {
-                    "name" : "nuggets",
-                    "items" : [
+                    "name": "Burgers",
+                    "items": [
                         {
-                            "name": "nug",
-                            "price": 10,
-                            "picture": "https://upload.wikimedia.org/wikipedia/commons/d/d0/McDonalds-Chicken-McNuggets.jpg"
+                            "name": "Zinger Burger",
+                            "price": 8,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Zinger+Burger",
+                            "days": ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
                         },
                         {
-                            "name": "nug nug",
-                            "price": 20,
-                            "picture": "https://i.etsystatic.com/19667106/r/il/efdd56/3776618011/il_570xN.3776618011_6jly.jpg"
+                            "name": "Chicken Fillet Burger",
+                            "price": 8,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Chicken+Fillet+Burger",
+                            "days": ["Mon", "Wed", "Fri"]
+                        }
+                    ]
+                },
+                {
+                    "name": "Sides",
+                    "items": [
+                        {
+                            "name": "Mashed Potatoes with Gravy",
+                            "price": 4,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Mashed+Potatoes+with+Gravy",
+                            "days": ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
+                        },
+                        {
+                            "name": "Coleslaw",
+                            "price": 4,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Coleslaw",
+                            "days": ["Mon", "Wed", "Fri", "Sun"]
+                        },
+                        {
+                            "name": "Mac & Cheese",
+                            "price": 4,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Mac+and+Cheese",
+                            "days": ["Tues", "Thurs", "Sat"]
                         }
                     ]
                 }
             ]
         },
         {
-            "restaurant": "Burger King",
-            "categories" : [
+            "restaurant": "Subway",
+            "categories": [
                 {
-                    "name" : "Burgers",
-                    "items" : [
+                    "name": "Sandwiches",
+                    "items": [
                         {
-                            "name": "whopper",
+                            "name": "Turkey Breast",
+                            "price": 8,
+                            "picture": "https://i.pinimg.com/originals/22/21/44/2221443cd405cf044fe04c5cb1614cc1.jpg",
+                            "days": ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
+                        },
+                        {
+                            "name": "Italian B.M.T.",
                             "price": 10,
-                            "picture": "https://assets-global.website-files.com/631b4b4e277091ef01450237/6398f26cb77dc209f3628aeb_Whopper.png"
+                            "picture": "https://subwaysuboftheday.com/wp-content/uploads/2024/01/Italian-BMT-e1704706327151.webp",
+                            "days": ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
+                        },
+                        {
+                            "name": "Tuna",
+                            "price": 9,
+                            "picture": "https://media14.s-nbcnews.com/i/MSNBC/Components/Video/202101/1611927394029_tdy_news_7a_headlines_guth_subway_tuna_210129_1920x1080.jpg",
+                            "days": ["Mon", "Wed", "Fri"]
+                        },
+                        {
+                            "name": "Meatball Marinara",
+                            "price": 9,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Meatball+Marinara",
+                            "days": ["Tues", "Thurs", "Sat"]
+                        }
+                    ]
+                },
+                {
+                    "name": "Salads",
+                    "items": [
+                        {
+                            "name": "Veggie Delite",
+                            "price": 7,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Veggie+Delite",
+                            "days": ["Mon", "Tues", "Wed", "Thurs", "Fri"]
+                        },
+                        {
+                            "name": "Oven Roasted Chicken",
+                            "price": 8,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Oven+Roasted+Chicken",
+                            "days": ["Mon", "Wed", "Fri"]
+                        },
+                        {
+                            "name": "Subway Club",
+                            "price": 10,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Subway+Club",
+                            "days": ["Sat", "Sun"]
+                        }
+                    ]
+                },
+                {
+                    "name": "Wraps",
+                    "items": [
+                        {
+                            "name": "Turkey, Bacon & Guacamole",
+                            "price": 11,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Turkey+Bacon+Guacamole",
+                            "days": ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
+                        },
+                        {
+                            "name": "Steak & Cheese",
+                            "price": 12,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Steak+Cheese",
+                            "days": ["Tues", "Thurs", "Sat"]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "restaurant": "Mom's Kitchen",
+            "location": "Creelman's",
+            "categories": [
+                {
+                    "name": "Breakfast",
+                    "items": [
+                        {
+                            "name": "Scrambled Eggs",
+                            "price": 10,
+                            "picture": "https://www.allrecipes.com/thmb/0VXMwCY9RVNrNvWcF_9v0iZpNqA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/JF_241160_CreamyCottageCheeseScrambled_4x3_12902-619d00dc88594ea9b8ed884a108db16d.jpg",
+                            "days": ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
+                        },
+                        {
+                            "name": "Home Fries with Onions",
+                            "price": 8,
+                            "picture": "https://wildflourskitchen.com/wp-content/uploads/2017/10/Sour-Cream-Onion-Fries-720x540.png",
+                            "days": ["Mon", "Tues", "Wed", "Thurs", "Fri"]
+                        },
+                        {
+                            "name": "French Toast",
+                            "price": 12,
+                            "picture": "https://www.allrecipes.com/thmb/Tn5X9tXURgqFUsyBlhD2rEDfP-4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ALR-recipe-16895-fluffy-french-toast-hero-01-ddmfs-2x1-6167c563f5a9458c9e0412210ce13544.jpg",
+                            "days": ["Sat", "Sun"]
+                        },
+                        {
+                            "name": "Sausages",
+                            "price": 15,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Sausages",
+                            "days": ["Mon", "Wed", "Fri"]
+                        },
+                        {
+                            "name": "Baked Beans",
+                            "price": 7,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Baked+Beans",
+                            "days": ["Tues", "Thurs", "Sat"]
+                        },
+                        {
+                            "name": "Bread Pudding",
+                            "price": 10,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Bread+Pudding",
+                            "days": ["Sun"]
+                        }
+                    ]
+                },
+                {
+                    "name": "Lunch",
+                    "items": [
+                        {
+                            "name": "Perogies",
+                            "price": 10,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Perogies",
+                            "days": ["Mon", "Tues"]
+                        },
+                        {
+                            "name": "Lentil Cutlers with Smoked Red Pepper Sauce",
+                            "price": 12,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Lentil+Cutlers",
+                            "days": ["Wed", "Thurs"]
+                        },
+                        {
+                            "name": "Honey Mustard Izumi Trout",
+                            "price": 20,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Trout",
+                            "days": ["Fri"]
+                        },
+                        {
+                            "name": "Fried Chicken",
+                            "price": 18,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Fried+Chicken",
+                            "days": ["Sat", "Sun"]
+                        }
+                    ]
+                },
+                {
+                    "name": "Dinner",
+                    "items": [
+                        {
+                            "name": "Smoked Artic Char Cakes",
+                            "price": 22,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Smoked+Char+Cakes",
+                            "days": ["Mon", "Wed"]
+                        },
+                        {
+                            "name": "Coq au Vin",
+                            "price": 25,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Coq+au+Vin",
+                            "days": ["Tues", "Thurs"]
+                        },
+                        {
+                            "name": "Szechuan Roasted Chicken",
+                            "price": 20,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Szechuan+Chicken",
+                            "days": ["Fri", "Sat"]
+                        },
+                        {
+                            "name": "Peach BBQ Chicken",
+                            "price": 18,
+                            "picture": "https://via.placeholder.com/150/FF7F7F/000000?text=Peach+BBQ+Chicken",
+                            "days": ["Sun"]
                         }
                     ]
                 }

@@ -3,19 +3,20 @@ import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-nati
 import MenuRestaurant from '../components/menuRestaurant';
 
 const menu = require('../menu.json');
+const globalStyles = require("../globalStyles.json");
 
 export default function MenuScreen() {
-
-    function filter(items, filterFunc){
-        
-    }
 
     return (
         <View style={styles.container}>
             <ScrollView style={styles.scrollview}>
+                <View style={styles.initialGap}/>
                 {menu.restaurants.map((restaurant, indexRes) => {
                     return(
-                        <MenuRestaurant key={indexRes} restaurant={restaurant}></MenuRestaurant>
+                        <View key={indexRes} style={styles.restaurantWrapper}>
+                            <Text style={styles.restaurant}>{restaurant.restaurant}</Text>
+                            <MenuRestaurant restaurant={restaurant}></MenuRestaurant>
+                        </View>
                     ) 
                 })}
             </ScrollView>
@@ -25,17 +26,25 @@ export default function MenuScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 100,
     flex: 1,
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    backgroundColor: globalStyles.backgroundColor
+},
+initialGap:{
+    height: 60
 },
 scrollview:{
     gap: 1,
-    width: "100%",
     flex: 1,
-    height: "100%"
+    gap: 100 
 },
-  menuItem:{
-    
+restaurantWrapper: {
+    paddingBottom: 100
+},
+  restaurant:{
+    color: globalStyles.primaryRedColor,
+    fontWeight: "bold",
+    fontSize: globalStyles.restaurantFontSize,
+    paddingLeft: 20
   }
 });

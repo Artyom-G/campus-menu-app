@@ -1,0 +1,14 @@
+{
+    "headerColor": "#FFFFFF",
+    "headerSize": 26,
+    "primaryRedColor": "#FF1F00",
+    "primaryInactiveRedColor": "#7a1b0d",
+    "primaryYellowColor": "#FFC700",
+    "backgroundColor": "#faf8f2",
+    "bottomBarBackgroundColor": "#faf0dc",
+    "bottomBarIconSize": 20,
+    "itemImageHeight": 243,
+    "itemImageWidth": 332,
+    "itemFontSize": 18,
+    "restaurantFontSize": 26
+}
