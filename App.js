@@ -22,12 +22,12 @@ export default function App() {
             } else if (route.name === 'AccountScreen') {
               iconName = 'user';
             }
-            return <Icon name={iconName} size={globalStyles.bottomBarIconSize} color={focused ? globalStyles.primaryRedColor : globalStyles.primaryRedColor} />;
+            return <Icon name={iconName} size={globalStyles.bottomBarIconSize} color={focused ? globalStyles.primaryRedColor : globalStyles.primaryInactiveRedColor} />;
           },
           tabBarActiveTintColor: globalStyles.primaryRedColor,
           tabBarInactiveTintColor: globalStyles.primaryRedColor,
           tabBarStyle: {
-            backgroundColor: globalStyles.backgroundColor,
+            backgroundColor: globalStyles.bottomBarBackgroundColor,
             position: 'absolute',
             bottom: 20,
             left: 110,
@@ -53,6 +53,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container:{
-    backgroundColor: globalStyles.backgroundColor
+    backgroundColor: globalStyles.bottomBarBackgroundColor
   }
 });

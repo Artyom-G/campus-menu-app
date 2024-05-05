@@ -10,6 +10,7 @@ export default function MenuScreen() {
     return (
         <View style={styles.container}>
             <ScrollView style={styles.scrollview}>
+                <View style={styles.initialGap}/>
                 {menu.restaurants.map((restaurant, indexRes) => {
                     return(
                         <View key={indexRes} style={styles.restaurantWrapper}>
@@ -25,9 +26,12 @@ export default function MenuScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 100,
     flex: 1,
-    alignItems: 'flex-start'
+    alignItems: 'flex-start',
+    backgroundColor: globalStyles.backgroundColor
+},
+initialGap:{
+    height: 100
 },
 scrollview:{
     gap: 1,
