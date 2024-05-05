@@ -8,7 +8,7 @@ export default function MenuItem({name, restaurant, category, price, picture}) {
         <Image source={{uri:picture,}} style={styles.image}></Image>
         <View style={styles.tags}>
             <Text style={styles.name}>{name}</Text>
-            <Text style={styles.price}>${price}</Text>
+            <Text style={styles.price}>${(Math.round(price * 100) / 100).toFixed(2)}</Text>
         </View>
         
     </View>
