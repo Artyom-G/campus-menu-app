@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "db7ea357-27f2-4ff1-9861-f8e710f391d0"
+      }
+    },
+    "android": {
+      "package": "com.socis.gryphcuisine"
+    }
+  }
+}
