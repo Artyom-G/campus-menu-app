@@ -1,2 +1,2 @@
 # campus-menu-app
-Guelph campus menu app in React Native
+Guelph campus menu app made in React Native called GryphCuisine
